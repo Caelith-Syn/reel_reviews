@@ -1,0 +1,200 @@
+* {
+  /* border: solid 1px black; */
+  padding: 5px;
+  margin: 5px;
+}
+
+/* this is the code that forces the <strong> elements to align with the <p> */
+
+strong {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* this is the code that I imported from google fonts! */
+
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: rgb(251, 245, 221);
+}
+
+.content_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 15%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(22, 64, 77);
+  color: white;
+  height: 150px;
+}
+
+#logo {
+  height: 100%;
+  width: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgb(22, 64, 77);
+  color: white;
+}
+
+#social_icons {
+  display: flex;
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(221, 168, 83);
+}
+
+nav a {
+  background-color: rgb(22, 64, 77);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.active_tab {
+  background-color: gold;
+}
+
+nav a:hover {
+  background-color: rgb(166, 205, 198);
+  color: rgb(22, 64, 77);
+  font-weight: 700;
+}
+
+#title {
+  font-size: 2rem;
+  color: rgb(22, 64, 77);
+}
+
+#reviews_title {
+  font-size: 4rem;
+  color: rgb(22, 64, 77);
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+#upcoming_banner {
+  width: 90%;
+  margin-left: 5%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.movie_section {
+  display: flex;
+  padding: 50px 0;
+  border-bottom: 3px solid black;
+}
+
+.left_section {
+  display: flex;
+  justify-content: right;
+  width: 25%;
+}
+
+.right_section {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  width: 75%;
+}
+
+.right_section a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.movie_titles {
+  width: 300px;
+  height: 450px;
+}
+
+#contact_us_banner {
+  width: 90%;
+  margin-left: 5%;
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom 10%;
+}
+
+#form_layout {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.rating_container {
+  color: gray;
+  font-size: 2rem;
+}
+
+.rating_container span:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+.rating_container .selected {
+  color: gold;
+}
+
+#rating_result {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: gold;
+  margin-left: 10px;
+}
+
+/* This is code to adjust to a screensize 1470px wide or smaller */
+
+@media (max-width: 1470px) {
+  .movie_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left_section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .right_section {
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Reel Reviews</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="assets/images/reel_reviews_logo.svg"
+          alt="Reel Reviews Logo"
+          id="logo"
+        />
+      </a>
+    </header>
+
+    <nav>
+      <a href="index.html" id="button">Home</a>
+      <a href="reviews.html" id="button">Reviews</a>
+      <a href="contact_us.html" id="button" class="active_tab">Contact Us</a>
+    </nav>
+
+    <main>
+      <div class="content_wrapper">
+        <section class="content_section" id="content">
+          <img
+            src="assets/images/contact_us.jpg"
+            alt="A group of people watching a laptop screen."
+            id="contact_us_banner"
+          />
+
+          <div>
+            <h1 id="title">How about reaching out to us!</h1>
+
+            <form
+              action="mailto:ewan@missionreadyhq.com"
+              method="post"
+              autocomplete="on"
+              id="form_layout"
+            >
+              <label for="name"><strong>Name:</strong></label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name here!"
+                required
+              /><br />
+
+              <label for="email"><strong>Email:</strong></label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your Email here!"
+                required
+              /><br />
+
+              <label for="message" id="message_label"
+                ><strong>Message:</strong></label
+              >
+              <textarea name="message" cols="30" rows="5"></textarea><br />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ronan Murphy</p>
+      <a href="https://www.facebook.com/" target="_blank" id="social_icons"
+        ><i
+          class="fa-brands fa-square-facebook fa-lg"
+          style="color: #ffffff"
+        ></i
+      ></a>
+      <a href="https://www.instagram.com/" target="_blank" id="social_icons"
+        ><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff"></i
+      ></a>
+      <a href="https://www.x.com/" target="_blank" id="social_icons"
+        ><i class="fa-brands fa-x-twitter fa-lg" style="color: #ffffff"></i
+      ></a>
+      <a href="https://www.tiktok.com/" target="_blank" id="social_icons"
+        ><i class="fa-brands fa-tiktok fa-lg" style="color: #ffffff"></i
+      ></a>
+      <a href="https://www.youtube.com/" target="_blank" id="social_icons"
+        ><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff"></i
+      ></a>
+    </footer>
+  </body>
+</html>
