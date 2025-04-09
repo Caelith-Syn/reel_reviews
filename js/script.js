@@ -2,7 +2,7 @@ console.log("Connected in the console!😃");
 
 // =============================================================================
 
-// //This was my first attempt at mapipulting the DOM by clicking on an element in the HTML file and then showing an alert message based on the ID of the element clicked.
+// // //This was my first attempt at mapipulting the DOM by clicking on an element in the HTML file and then showing an alert message based on the ID of the element clicked.
 
 // // This part of the code creates an event listener which listens for a click event on the entire document.
 // document.addEventListener("click", function (event) {
